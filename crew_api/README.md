@@ -2,7 +2,7 @@
 
 
 * Deployment instructions: 
-    * Deploy a postgres database to use this API server
+    * Deploy a postgres v12 database to use this API server
 
 * Ruby version:
     * ruby-2.6.6
