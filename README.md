@@ -6,7 +6,7 @@
 
 ## Design a certification system for construction crew
 * The storage is already setup with Postgres, our database choice here at Buildsafely.
-* The crew API to manage a crew 
+* The crew API to manage a crew is already available at localhost:3000/api/crew when launching the project.
 
 #### 1. Api endpoint to code
 
@@ -34,7 +34,7 @@ Response can either be:
 { "message": "Is certificated" } or  { "message": "Is not certificated" }
 
 
-* If you can think of better API endpoints for certificating the crew, you can choose something else.
+_If you can think of a better way for certificating the crew, feel free to implement your own. Be prepared to defend your choices :)_ 
 
 #### 2. Any time left? feel free to add features to the certification system.
 
