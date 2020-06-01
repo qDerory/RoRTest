@@ -1,30 +1,28 @@
 # RoR Test.
 
-Please use git to save your work.
-Feel free to improve what is already there along the way
+* Please use git to save your work.
+* Feel free to improve what is already there along the way
+* Designed to be done in one hour
 
-#### 1. Design a certification system for construction crew
-The storage can be either filesystem or database
-###### Design Datamodel of Crew Members
----
-###### Design Apis for managing them
----
+## Design a certification system for construction crew
+* The storage is already setup with Postgres, our database choice here at Buildsafely.
+* The crew API to manage a crew 
 
-#### 2. Api endpoint to code
+#### 1. Api endpoint to code
 
-###### Insert a graduation date:
+###### Insert a certification date:
 ---
 
-  **Request**: PUT /api/certificate/{username}
+  **Request**: PUT /api/crew/{crew_id}/certificate
 
   **Body**: { "certificate-date": "YYYY-MM-DD" }
 
   **Response**: 204 No Content
 
 
-###### Get a graduation date:
+###### Get a certification date:
 ---
-  **Request**: GET /api/certificate/{username}
+  **Request**: GET /api/crew/{crew_id}/certificate
 
   **Body**:
 
@@ -33,17 +31,15 @@ The storage can be either filesystem or database
 
 Response can either be:
 
-{ "message": "Is graduated" } or  { "message": "Is not graduated" }
+{ "message": "Is certificated" } or  { "message": "Is not certificated" }
 
 
+* If you can think of better API endpoints for certificating the crew, you can choose something else.
 
-#### 3. How would you integrate certificate expiration notification
+#### 2. Any time left? feel free to add features to the certification system.
+
+* Notification system
+* Multiple certificate
+* Grouping people by teams/company
 
 
-#### 4. Group crews by companies and teams
-
-###### Design datamodel:
----
-
-###### How would you integrate these datamodel changes?:
----

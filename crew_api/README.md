@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+* Deployment instructions: 
+    * Deploy a postgres database to use this API server
 
-* Ruby version
+* Ruby version:
+    * ruby-2.6.6
+* Database creation:
+    * rake db:create
 
-* System dependencies
+* Database initialization:
 
-* Configuration
+    * rake db:migrate
+    * rake db:seed
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
